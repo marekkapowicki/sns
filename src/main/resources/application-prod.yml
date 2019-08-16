@@ -1,0 +1,26 @@
+logging:
+  level:
+    pl:
+      marekk:
+        sns: debug
+
+cloud:
+  aws:
+    credentials:
+      accessKey: {accessKey}
+      secretKey: {secretKey}
+    region:
+      static: "us-east-1"
+      auto: false
+    stack:
+      auto: false
+
+phone:
+  bundles:
+    - key: tst
+      platformApplicationArn: tstAppArn
+
+    - key: stg
+      platformApplicationArn: stgAppArn
+    - key: pro
+      platformApplicationArn: proAppArn
